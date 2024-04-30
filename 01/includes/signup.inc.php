@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['signup-submit'])) {
 
   require 'dbh.inc.php';
@@ -48,7 +49,7 @@ if (isset($_POST['signup-submit'])) {
           exit();
         } else {
 
-          $hashPwd = password_hash($pwd, PASSWORD_DEFAULT);
+          $hashPwd = password_hash($password, PASSWORD_DEFAULT);
 
           mysqli_stmt_bind_param($stmt, 'sss', $username, $email, $hashPwd);
           mysqli_stmt_execute($stmt);

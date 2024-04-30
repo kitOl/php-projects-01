@@ -59,10 +59,21 @@ nav ul li a,
 
 .header-login {
   margin-right: 20px;
+  margin-left: auto;
   display: flex;
   justify-content: space-between;
   gap: 15px;
   align-items: center;
+}
+
+.header-login input {
+  padding: 0 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  line-height: 2;
+  background-color: #eeeded;
+  border-radius: 5px;
+  outline-color: aquamarine;
 }
 
 .section-default {
@@ -88,7 +99,8 @@ nav ul li a,
   line-height: 2;
   padding: 3px 5px;
   background: #f0efef;
-  border: none;
+  border: 1px solid lightgrey;
   border-radius: 7px;
+  outline-color: aquamarine;
   margin-bottom: 15px;
 }
