@@ -19,7 +19,7 @@ if (isset($_POST['signup-submit'])) {
     header("Location: ../signup.php?error=invaliduid&mail=$email");
     exit();
   } elseif ($password !== $passwordRepeat) {
-    header("Location: ../signup.php?error=passwordcheckuid=$username&mail=$email");
+    header("Location: ../signup.php?error=passwordcheck&uid=$username&mail=$email");
     exit();
   } else {
 

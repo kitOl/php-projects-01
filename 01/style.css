@@ -104,3 +104,17 @@ nav ul li a,
   outline-color: aquamarine;
   margin-bottom: 15px;
 }
+
+.signuperror {
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.signupsuccess {
+  font-size: 18px;
+  font-weight: 600;
+  color: green;
+  margin-bottom: 20px;
+}
