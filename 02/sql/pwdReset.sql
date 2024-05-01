@@ -1,0 +1,7 @@
+CREATE TABLE pwdReset (
+  id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  email TEXT NOT NULL,
+  selector TEXT NOT NULL,
+  token LONGTEXT NOT NULL,
+  expires TEXT NOT NULL
+);
