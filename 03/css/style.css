@@ -119,3 +119,13 @@ button {
   font-size: 18px;
   text-transform: uppercase;
 }
+
+.error {
+  padding: 10px 0;
+  color: red;
+}
+
+.success {
+  padding: 10px 0;
+  color: blue;
+}
