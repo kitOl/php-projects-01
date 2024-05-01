@@ -36,6 +36,11 @@ nav {
   background-color: #1e1e1e;
 }
 
+section {
+  background-color: #fff;
+  padding: 20px;
+}
+
 nav .wrapper {
   display: flex;
   justify-content: space-between;
@@ -86,4 +91,31 @@ nav ul li a {
   height: 160px;
   padding: 20px;
   background-color: #cfcfcf;
+}
+
+.signup-form h2 {
+  margin-bottom: 15px;
+}
+
+.signup-form-form form {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+
+.signup-form-form form input {
+  padding: 0 5px;
+  font-size: 18px;
+  line-height: 2;
+}
+
+button {
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
