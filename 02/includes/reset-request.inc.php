@@ -58,8 +58,17 @@ if (isset($_POST['reset-request-submit'])) {
 
   $headers .= "Content-type: text/html\r\n";
 
-  mail($to, $subject, $message, $headers);
+  $resultEmailing = mail($to, $subject, $message, $headers);
 
+
+  session_start();
+  $_SESSION['message'] = $message;
+  /*
+  if (!$resultEmailing) {
+    header("Location: ../reset-password.php?reset=erroremailing");
+    exit();
+  }
+*/
   header("Location: ../reset-password.php?reset=success");
   exit();
 } else {

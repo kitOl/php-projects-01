@@ -19,6 +19,16 @@ button {
   margin-bottom: 20px;
 }
 
+input {
+  padding: 0 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  line-height: 2;
+  background-color: #eeeded;
+  border-radius: 5px;
+  outline-color: aquamarine;
+}
+
 .wrapper-main {
   width: 900px;
   margin: 0 auto;
@@ -68,6 +78,11 @@ nav ul li a,
   align-items: center;
 }
 
+.header-login form {
+  height: 60px;
+  line-height: 60px;
+}
+
 .header-login input {
   padding: 0 5px;
   border: 1px solid lightgrey;
@@ -85,6 +100,14 @@ nav ul li a,
   /* border: 1px solid #000; */
   background-color: #fff;
   border-radius: 20px;
+}
+
+.section-default * + * {
+  margin-top: 20px;
+}
+
+.section-default p {
+  line-height: 1.75;
 }
 
 .login-status {

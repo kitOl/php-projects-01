@@ -5,7 +5,7 @@ if (isset($_POST['reset-password-submit'])) {
   $selector = $_POST['selector'];
   $validator = $_POST['validator'];
   $password = $_POST['pwd'];
-  $passwordRepeat = $_POST['password-repeat'];
+  $passwordRepeat = $_POST['pwd-repeat'];
 
   if (empty($password) || empty($passwordRepeat)) {
     header("Location: ../create-new-password.php?newpwd=empty");
@@ -34,6 +34,8 @@ if (isset($_POST['reset-password-submit'])) {
 
     if (!$row = mysqli_fetch_assoc($result)) {
       echo "You need to re-submit your reset request.";
+
+      header("Location: ../reset-password.php?error=errorsql");
       exit();
     } else {
 
@@ -88,7 +90,7 @@ if (isset($_POST['reset-password-submit'])) {
                 mysqli_stmt_bind_param($stmt, 's', $tokenEmail);
                 mysqli_stmt_execute($stmt);
 
-                header("Location: ../singup.php?newpwd=passwordupdated");
+                header("Location: ../signup.php?newpwd=passwordupdated");
                 exit();
               }
             }
