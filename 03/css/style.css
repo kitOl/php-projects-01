@@ -120,12 +120,17 @@ button {
   text-transform: uppercase;
 }
 
-.error {
+.error,
+.success {
   padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.error {
   color: red;
 }
 
 .success {
-  padding: 10px 0;
   color: blue;
 }
