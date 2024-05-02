@@ -27,7 +27,7 @@ session_start();
         <?php if (isset($_SESSION['userid'])) : ?>
 
           <li><a href="profile.php">Profile page</a></li>
-          <li><a href="includes/logout.php">Log out</a></li>
+          <li><a href="includes/logout.inc.php">Log out</a></li>
 
         <?php else : ?>
 
