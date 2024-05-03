@@ -3,7 +3,6 @@ include_once 'header.php';
 
 include 'classes/dbh.classes.php';
 include 'classes/profileinfo.classes.php';
-include 'classes/profileinfo-contr.classes.php';
 include 'classes/profileinfo-veiw.classes.php';
 
 $profileInfo = new ProfileInfoView();
