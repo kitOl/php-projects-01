@@ -27,7 +27,9 @@ $profileInfo = new ProfileInfoView();
             <?php $profileInfo->fetchAbout($_SESSION['userid']); ?>
           </p>
           <h3>FOLLOWERS</h3>
+          <p>\</p>
           <h3>FOLLOWERS</h3>
+          <p>\</p>
         </div>
       </div>
       <div class="profile-content">

@@ -194,3 +194,85 @@ button {
   /* margin-bottom: 20px; */
   color: #fff;
 }
+
+.profile {
+  padding: 70px 0;
+}
+
+.profile-info {
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 10px;
+}
+
+.profile-info-img {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 15px;
+  padding: 20px 0 20px 20px;
+  background-color: #c0bfbf6e;
+  border-radius: 10px 10px 0 0;
+}
+
+.profile-info-img p {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  /* text-align: center; */
+}
+
+.follow-btn {
+  display: inline-block;
+  /* margin: 10px 0; */
+  margin-top: 260px;
+  background-color: #fff;
+  font-weight: 500;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.profile-info-about {
+  padding: 20px;
+}
+
+.profile-info-about p {
+  margin-bottom: 20px;
+}
+
+.profile-content * + * {
+  margin-top: 15px;
+}
+
+.profile-intro {
+  padding: 20px;
+  /* margin-bottom: 10px; */
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.profile-posts {
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+}
+
+.profile-posts * + * {
+  margin-top: 10px;
+}
+
+.profile-post {
+  padding-left: 20px;
+  border-left: 4px solid #000;
+}
+
+.profile-post p {
+  color: #000;
+}
